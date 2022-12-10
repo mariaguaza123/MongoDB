@@ -19,8 +19,6 @@ mongoose.connect(uri)
 
 //Rutas del proyecto
 const routerMain = Router();
-routerMain.use('/products', productsRouter);
-routerMain.use('/cart', cartRouter);
 //Routers desde la base de datos
 routerMain.use('/productsDB', productsRouterDB);
 
